@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Identifier</key>
+    <string>com.dswcode.popclip.anki</string>
+    <key>Name</key>
+    <string>Anki Connect</string>
+    <key>Author</key>
+    <string>dswcode</string>
+    <key>Version</key>
+    <string>2.0</string>
+    <key>Description</key>
+    <string>Send the selected text to AnkiConnect as a new note.</string>
+    <key>Options</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>deck</string>
+            <key>Label</key>
+            <string>Deck Name</string>
+            <key>Type</key>
+            <string>string</string>
+            <key>DefaultValue</key>
+            <string>Default</string>
+        </dict>
+        <dict>
+            <key>Identifier</key>
+            <string>model</string>
+            <key>Label</key>
+            <string>Basic Model Name</string>
+            <key>Type</key>
+            <string>string</string>
+            <key>DefaultValue</key>
+            <string>Basic</string>
+        </dict>
+        <dict>
+            <key>Identifier</key>
+            <string>clozeModel</string>
+            <key>Label</key>
+            <string>Cloze Model Name</string>
+            <key>Type</key>
+            <string>string</string>
+            <key>DefaultValue</key>
+            <string>Cloze</string>
+        </dict>
+        <dict>
+            <key>Identifier</key>
+            <string>tags</string>
+            <key>Label</key>
+            <string>Tags (space or comma separated)</string>
+            <key>Type</key>
+            <string>string</string>
+            <key>DefaultValue</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>Identifier</key>
+            <string>autoCopyURL</string>
+            <key>Label</key>
+            <string>Append Source URL</string>
+            <key>Type</key>
+            <string>boolean</string>
+            <key>DefaultValue</key>
+            <true/>
+        </dict>
+    </array>
+    <key>Actions</key>
+    <array>
+        <dict>
+            <key>Identifier</key>
+            <string>com.dswcode.popclip.anki.basic</string>
+            <key>Title</key>
+            <string>添加为基础卡片</string>
+            <key>JSFile</key>
+            <string>script.js</string>
+        </dict>
+        <dict>
+            <key>Identifier</key>
+            <string>com.dswcode.popclip.anki.cloze</string>
+            <key>Title</key>
+            <string>添加为填空卡片</string>
+            <key>JSFile</key>
+            <string>script.js</string>
+        </dict>
+    </array>
+</dict>
+</plist>
